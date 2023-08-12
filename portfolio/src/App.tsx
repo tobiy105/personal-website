@@ -1,7 +1,7 @@
 import React from 'react';
 import profile from './profile.jpg';
 import './App.css';
-import Navigation from './components/navigation';
+import SlideDownNav from './components/sildedownnav';
 import Bio from './components/bio';
 import Projects from './components/projects';
 import ContactMe from './components/contactme';
@@ -9,7 +9,7 @@ import ContactMe from './components/contactme';
 function App() {
   return (
     <div className="App">
-      <Navigation />
+      <SlideDownNav />
       <header className="App-header">
       <div className="cv-container">
         <div className="profile-section">
