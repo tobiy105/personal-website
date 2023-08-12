@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub } from 'react-icons/fa'; 
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Import icons from 'react-icons/fa'
 
 const ContactMe = () => {
   return (
@@ -28,6 +28,9 @@ const ContactMe = () => {
       <div className="mt-4">
         <p>Connect with me:</p>
         <div className="flex space-x-4">
+          <a href="mailto:tobiy105@outlook.com" className="text-white">
+            <FaEnvelope className="text-gray-600 text-2xl hover:text-gray-800" /> 
+          </a>
           {/* LinkedIn Icon and Link */}
           <a href="https://linkedin.com/in/oluwatobi-sobola" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="text-blue-600 text-2xl hover:text-blue-800" />

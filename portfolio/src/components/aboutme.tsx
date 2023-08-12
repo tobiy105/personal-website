@@ -1,14 +1,14 @@
 import React from 'react';
 import profile from '../profile.jpg';
 
-const Bio = () => {
+const aboutme = () => {
   return (
     <div className="bg-gray-100 p-4" id="bio">
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-4 md:mb-0">
-          <h2 className="text-2xl font-semibold mb-2">Bio</h2>
+          <h2 className="text-2xl font-semibold mb-2">About Me</h2>
           <p>
-            Your bio content goes here. You can talk about your background, skills, and experiences.
+          Enthusiastic and hardworking computer programmer skilled in C++, Python, and JavaScript, with expertise in software development tools and technologies such as Git and Visual Studio Code. Passionate about continuous learning and development.
           </p>
         </div>
         <div className="md:w-1/2 text-center">
@@ -19,4 +19,4 @@ const Bio = () => {
   );
 };
 
-export default Bio;
+export default aboutme;
