@@ -12,7 +12,7 @@ const HomePage = () => {
 
   const [typingText, setTypingText] = useState('');
   const [displayedText, setDisplayedText] = useState('');
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
       if (typingText.length === 0) {
@@ -37,6 +37,7 @@ const HomePage = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
       <div className="max-w-8xl mx-auto p-8 grid grid-cols-3 gap-24 items-center">
+        
         <div className="col-span-2">
           <h1 className="text-4xl font-semibold mb-4">
             Hello! 👋 My name is<br />
@@ -60,7 +61,9 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-span-1 text-right">
-          <img src={profile} className="w-64 h-64 rounded-full shadow-xl" alt="Profile" />
+            <div className="border-4 border-orange-400 rounded-full p-0 animate-pulse">
+                <img src={profile} className="w-64 h-64 rounded-full shadow-xl" alt="Profile" />
+            </div>
         </div>
       </div>
     </div>
