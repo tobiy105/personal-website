@@ -47,26 +47,26 @@ const SlideDownNav = () => {
     <nav className="bg-gray-900 p-4 fixed top-0 w-full flex items-center justify-between z-10"> {/* Add z-10 to ensure the navbar stays on top */}
       <div className="flex items-center">
         <img src={logo} className="w-8 h-8 mr-2" alt="Logo" />
-        <h1 className="text-white text-lg font-semibold">Oluwatobi Sobola</h1>
+        <h1 className="text-white text-lg font-sagona">Oluwatobi Sobola</h1>
       </div>
       <ul className="flex space-x-4">
         <li>
-          <a href="#" className={`text-white ${activeTab === 'home' ? 'font-semibold' : ''}`}>
+          <a href="#" className={`text-white ${activeTab === 'home' ? 'font-sagona' : ''}`}>
             Home
           </a>
         </li>
         <li>
-          <a href="#aboutme" className={`text-white ${activeTab === 'aboutme' ? 'font-semibold' : ''}`}>
+          <a href="#aboutme" className={`text-white ${activeTab === 'aboutme' ? 'font-sagona' : ''}`}>
             About Me
           </a>
         </li>
         <li>
-          <a href="#projects" className={`text-white ${activeTab === 'projects' ? 'font-semibold' : ''}`}>
+          <a href="#projects" className={`text-white ${activeTab === 'projects' ? 'font-sagona' : ''}`}>
             Projects
           </a>
         </li>
         <li>
-          <a href="#contact" className={`text-white ${activeTab === 'contact' ? 'font-semibold' : ''}`}>
+          <a href="#contact" className={`text-white ${activeTab === 'contact' ? 'font-sagona' : ''}`}>
             Contact Me
           </a>
         </li>

@@ -4,7 +4,7 @@ import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Import ico
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white p-4 mt-8">
-      <p className="mt-4">
+      <p className="mt-4 font-sagona">
         Made with ❤️. By Oluwatobi Sobola. Open sourced on
         <a href="https://github.com/tobiy105/personal-website" target="_blank" rel="noopener noreferrer" className="ml-1 text-white">
           <FaGithub className="inline text-lg" /> 

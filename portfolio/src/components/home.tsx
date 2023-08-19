@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import profile from '../profile.jpg'; // Replace with your profile picture
-import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; // Import icons from 'react-icons/fa';
+import profile from '../profile.jpg'; 
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; 
 
-const HomePage = () => {
+const Home = () => {
   const [typingIndex, setTypingIndex] = useState(0);
   const messages = [
     'I am a Software Engineer',
@@ -35,27 +35,27 @@ const HomePage = () => {
   }, [typingText, displayedText, typingIndex]);
 
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div className="bg-transparent min-h-screen flex items-center justify-center " id="home">
       <div className="max-w-8xl mx-auto p-8 grid grid-cols-3 gap-24 items-center">
         
         <div className="col-span-2">
-          <h1 className="text-4xl font-semibold mb-4">
+          <h1 className="text-white text-4xl font-sagona mb-4">
             Hello! 👋 My name is<br />
-            <span className="text-5xl font-bold">Oluwatobi Sobola</span>
+            <span className="text-5xl font-bold font-sagona ">Oluwatobi Sobola</span>
           </h1>
           <div className="writer">
-            <div className="writer-text">
+            <div className="text-white font-sagona writer-text">
               {displayedText}
             </div>
           </div>
           <div className="flex space-x-4 mt-4">
-            <a href="mailto:tobiy105@outlook.com" className="text-gray-700 hover:text-gray-900">
+            <a href="mailto:tobiy105@outlook.com" className="text-gray-100 hover:text-gray-900">
               <FaEnvelope className="text-2xl" />
             </a>
             <a href="https://www.linkedin.com/in/oluwatobi-sobola" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
-              <FaLinkedin className="text-blue-600 text-2xl hover:text-blue-800" />
+              <FaLinkedin className="text-gray-100 text-2xl hover:text-gray-900" />
             </a>
-            <a href="https://github.com/tobiy105" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
+            <a href="https://github.com/tobiy105" target="_blank" rel="noopener noreferrer" className="text-gray-100 hover:text-gray-900">
               <FaGithub className="text-2xl" />
             </a>
           </div>
@@ -70,4 +70,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;

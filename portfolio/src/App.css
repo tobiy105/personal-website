@@ -2,6 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import url('https://fonts.cdnfonts.com/css/sagona');
+
+.font-sagona {
+  font-family: 'Sagona', sans-serif; /* Use the imported font name */
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -151,5 +157,13 @@ display: inline-block;
   transform-origin: 0% 50%;
 }
 
+svg * { transform-origin: 50% }
 
+@keyframes left {
+  100% { transform: rotate(-360deg) }
+}
+
+@keyframes right {
+  100% { transform: rotate(360deg) }
+}
 
