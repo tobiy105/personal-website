@@ -5,7 +5,7 @@ import { Navbar } from './Navbar';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; 
 
 
-export const Hero = () => {
+export const Header = () => {
   const [typingIndex, setTypingIndex] = useState(0);
   const messages = [
     'I am a Software Engineer',
