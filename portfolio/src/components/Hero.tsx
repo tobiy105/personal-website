@@ -44,7 +44,12 @@ export const Hero = () => {
       <div className='container grid lg:grid-cols-1 h-[calc(100vh-60px)]' id='home'>
         <div className='text-[80px] sm:text-[130px] font-bold leading-tight flex justify-center items-center flex-col'>
           <h1 className="text-white text-5xl font-sagona mb-4">
-            Hello! <span className="text-5xl waving-hand">👋</span> My name is<br />
+            Hello! 
+            <span className="text-5xl waving-hand">
+              👋
+            </span> 
+            My name is
+            <br />
             <span className="text-5xl font-bold font-sagona ">Oluwatobi Sobola</span>
           </h1>
 
