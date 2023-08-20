@@ -1,23 +1,88 @@
 import React from 'react';
+// import crypticchat1 from '%PUBLIC_URL%/crypticchat1.png';
+// import crypticchat2 from '%PUBLIC_URL%/crypticchat2.png';
+import { Heading } from './Heading';
+import { Card } from './Card';
 
-const Projects = () => {
+// const crypticchat = [
+//     {
+//       image: crypticchat1,
+//       title: 'Cryptic Chat: Log In',
+//       link: 'https://cryptichat.benmitchell.dev/',
+//     },
+//     {
+//       image: crypticchat2,
+//       title: 'Cryptic Chat: Log In',
+//       link: 'https://cryptichat.benmitchell.dev/',
+//     },
+//   ];
+
+const data = [ 
+    {
+    id: 0,
+    title: 'Cryptic Chat: Log In',
+    desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
+    img: '/crypticchat1.webp',
+    tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+    },
+
+    {
+        id: 1,
+        title: 'Cryptic Chat: Log In',
+        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
+        img: '/crypticchat1.webp',
+        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+    },
+
+    {
+        id: 2,
+        title: 'Cryptic Chat: Log In',
+        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
+        img: '/crypticchat1.webp',
+        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+    },
+
+    {
+        id: 3,
+        title: 'Cryptic Chat: Log In',
+        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
+        img: '/crypticchat1.webp',
+        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+    },
+
+    {
+        id: 4,
+        title: 'Cryptic Chat: Log In',
+        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
+        img: '/crypticchat1.webp',
+        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+    },
+
+    {
+        id: 5,
+        title: 'Cryptic Chat: Log In',
+        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
+        img: '/crypticchat1.webp',
+        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+        },
+
+];
+
+export const Projects = () => {
   return (
-    <div className="bg-gray-100 p-4" id="projects">
-      <h2 className="text-2xl font-bold font-sagona mb-2">Projects</h2>
-      <div className="flex flex-wrap -mx-2">
-        {/* Project 1 */}
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
-          <div className="border p-4">
-            {/* Project Image (Replace src with your image path) */}
-            <img src="project1-image.jpg" className="w-full mb-2" alt="Project 1" />
-            <h3 className=" text-lg font-sagona mb-1">Project 1</h3>
-            <p>Project description goes here.</p>
-          </div>
+    <div className='container pt-32' id='projects'>
+        <Heading title='My Projects'/>
+        <div className='grid gap-10 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center'>
+            {data.map((el) => (
+                <Card 
+                    key={el.id}
+                    title={el.title}
+                    desc={el.desc}
+                    img={el.img}
+                    tags={el.tags}
+                />
+            ))}
         </div>
-        {/* Add more project placeholders */}
-      </div>
     </div>
-  );
+  )
 };
-
-export default Projects;
