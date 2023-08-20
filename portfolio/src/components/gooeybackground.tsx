@@ -36,6 +36,27 @@ export const GooeyBackground: React.FC = () => {
 
     const circles: JSX.Element[] = [];
 
+    for (let i = 0; i < numCircles; i++) {
+      const cx = `${getRandomValue(10, 90)}%`;
+      const cy = `${getRandomValue(10, 90)}%`;
+      const r = getRandomValue(20, 60);
+      const color = getRandomColor();
+      const animationDuration = `${getRandomValue(8, 15)}s`;
+
+      circles.push(
+          <circle
+              key={i}
+              cx={cx}
+              cy={cy}
+              r={r}
+              fill={color}
+              style={{
+                  animation: `move-${i} ${animationDuration} linear infinite`,
+              }}
+          />
+      );
+    }
+
     return (
         <div
           style={{
