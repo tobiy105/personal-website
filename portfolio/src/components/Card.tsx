@@ -12,7 +12,7 @@ export const Card:React.FC<CardProps> = ({ title, desc, img, tags }) => {
   return (
     <div className='border border-accent w-[300px] sm:w-[350px] rounded-md' data-aos='zoom-in-up'>
         <div>
-            <Image className='w-[300px] sm:w-[350px] h-auto'
+            <Image className='w-[300px] sm:w-[350px] h-auto rounded-md'
                 src={img}
                 width={350}
                 height={350}
