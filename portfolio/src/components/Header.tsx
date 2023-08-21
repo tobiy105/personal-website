@@ -9,7 +9,8 @@ export const Header = () => {
   const [typingIndex, setTypingIndex] = useState(0);
   const messages = [
     'I am a Software Engineer',
-    'I Build Websites, AI and Games',
+    'I Build Websites',
+    'I Build Other Projects',
     'I Solve Problems'
   ];
 

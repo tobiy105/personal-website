@@ -67,6 +67,11 @@
   animation: wave 2s infinite;
 }
 
+.text-3xl.waving-hand {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+
 @layer components{
   .menuLink{
     @apply cursor-pointer hover:text-[#c5c5c5];
