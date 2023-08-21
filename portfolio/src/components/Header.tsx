@@ -42,7 +42,7 @@ export const Header = () => {
       
       <Navbar />
       <div className='container grid lg:grid-cols-1 h-[calc(100vh-60px)]' id='home'>
-        <div className='text-[80px] sm:text-[130px] font-bold leading-tight flex justify-center items-center flex-col'>
+        <div className='text-[80px] sm:text-[130px] font-bold leading-tight lg:gap-16 hidden md:flex justify-center items-center flex-col'>
           <h1 className="text-white text-5xl font-sagona mb-4">
             Hello! 
             <span className="text-5xl waving-hand">
@@ -71,6 +71,9 @@ export const Header = () => {
           </div>
         </div>
       </div>
+      {/* Smaller screens*/}
+      
+      
     </div>
   );
 };
