@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <main>
-      <GooeyBackground/>
+      {typeof window !== 'undefined' && <GooeyBackground />}
       <Header/>
       <AboutMe/>
       <Projects/>
