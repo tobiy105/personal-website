@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Projects } from '@/components/Projects';
 import { AboutMe } from '@/components/AboutMe';
 import { Work } from '@/components/Work';
+import { Skills } from '@/components/Skills';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,11 +18,12 @@ export default function Home() {
   useEffect(() => {
     AOS.init({
       easing: 'ease-in-back',
-      duration: 900,
+      duration: 1200,
       delay: 50,
       mirror: true,
       anchorPlacement: 'bottom-bottom',
       offset: 160,
+      once: true,
     });
     AOS.refresh();
   }, []);
@@ -32,7 +34,8 @@ export default function Home() {
       <Header/>
       <AboutMe/>
       <Projects/>
-      <Work/>
+      {/* <Work/> */}
+      <Skills/>
       <Contact/>
     </main>
   )
