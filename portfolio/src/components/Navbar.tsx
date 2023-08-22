@@ -17,40 +17,46 @@ export const Navbar = () => {
       const skillsSection = document.getElementById('skills');
       const contactSection = document.getElementById('contact');
 
+      const scrollPosition = window.scrollY;
+      const shouldNavbarBeTransparent = scrollPosition <= 200;
+      setNavbarTransparent(shouldNavbarBeTransparent);
+
       if (
-        homeSection && aboutmeSection && projectsSection && contactSection &&
-        window.scrollY >= homeSection.offsetTop &&
-        window.scrollY < aboutmeSection.offsetTop
+        homeSection &&
+        aboutmeSection &&
+        projectsSection &&
+        contactSection &&
+        scrollPosition >= homeSection.offsetTop &&
+        scrollPosition < aboutmeSection.offsetTop
       ) {
         setActiveTab('home');
       } else if (
-        homeSection && aboutmeSection && projectsSection &&
-        window.scrollY >= aboutmeSection.offsetTop &&
-        window.scrollY < projectsSection.offsetTop
+        aboutmeSection &&
+        projectsSection &&
+        scrollPosition >= aboutmeSection.offsetTop &&
+        scrollPosition < projectsSection.offsetTop
       ) {
         setActiveTab('about');
       } else if (
-        aboutmeSection && projectsSection && contactSection &&
-        window.scrollY >= projectsSection.offsetTop &&
-        window.scrollY < contactSection.offsetTop
+        projectsSection &&
+        contactSection &&
+        scrollPosition >= projectsSection.offsetTop &&
+        scrollPosition < skillsSection.offsetTop
       ) {
         setActiveTab('projects');
       } else if (
-        projectsSection && contactSection && skillsSection &&
-        window.scrollY >= skillsSection.offsetTop &&
-        window.scrollY < projectsSection.offsetTop
+        skillsSection &&
+        contactSection &&
+        scrollPosition >= skillsSection.offsetTop &&
+        scrollPosition < contactSection.offsetTop
       ) {
         setActiveTab('skills');
       } else if (
-        skillsSection &&
-        window.scrollY >= skillsSection.offsetTop
+        contactSection &&
+        scrollPosition >= contactSection.offsetTop
       ) {
         setActiveTab('contact');
       }
-      
-      const scrollPosition = window.scrollY;
-      const shouldNavbarBeTransparent = scrollPosition <= 200; // Adjust this value as needed
-      setNavbarTransparent(shouldNavbarBeTransparent);
     };
 
     window.addEventListener('scroll', handleScroll);
