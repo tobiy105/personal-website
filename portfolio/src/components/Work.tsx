@@ -4,11 +4,11 @@ import { WorkCard } from './WorkCard';
 
 const testimaonialData = [
     {
-        companyName: 'Google',
+        companyName: 'Dunbia',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         img: "/profile.jpg",
         name: 'Oluwatobi',
-        designation: 'Software Engineer',
+        designation: 'Shift Manager',
     },
 
     {

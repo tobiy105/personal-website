@@ -6,41 +6,22 @@ import Image from 'next/image';
 export const AboutMe = () => {
   return (
     <div className='container pt-32' id='about'>
-        <div className='bg-gray-700 bg-opacity-60 border border-accent p-8 rounded-md'>    
-            <Heading title='About Me'/>
-            <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-1/2 mb-4 md:mb-0">
-                    <h2 className="text-2xl font-bold font-sagona mb-2">About Me</h2>
-                    <p>
-                        Enthusiastic and hardworking computer programmer skilled in C++, Python, and JavaScript, with expertise in software development tools and technologies such as Git and Visual Studio Code. Passionate about continuous learning and development.
-                    </p>
-                </div>
-                <div className="md:w-1/2 text-center">
-                    <Image src={profile} className="w-32 h-32 rounded-full mx-auto" alt="Profile" />
-                </div>
+      <div className='bg-gray-700 bg-opacity-60 border border-accent p-8 rounded-md'>    
+        <Heading title='About Me'/>
+        <div className="flex flex-col md:flex-row items-center" data-aos='zoom-in-up'>
+          <div className="md:w-1/2 text-center" data-aos='zoom-in-up'>
+            <Image src={profile} className="w-96 h-96 rounded-full mx-auto" alt="Profile" />
+          </div>
+          <div className="md:w-1/2 mb-4 md:mb-0">
+            <p>
+              My name is Oluwatobi Sobola. I graduated from the University of Leeds with a degree in MEng Computer Science with AI. My goal is to pursue this passion within the field of software engineering. In my free time, I like working on open-source projects. I possess a deep enthusiasm for learning and growth. Additionally, I'm a passionate rugby player, combining teamwork and dedication both on and off the field.
+            </p>
+            <div className="mt-4">
+              <a href="https://docs.google.com/presentation/d/16s2X1xMYbLMzkF1GleviFgk_cUlz6gLS/edit?usp=sharing&ouid=108164784219264029188&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="bg-gray-700 bg-opacity-60 border border-accent text-white py-2 px-4 rounded-md hover:bg-gray-700 transition duration-300 ease-in-out">Resume</a>
             </div>
-            <div className='grid md:grid-cols-2 items-center'>
-                <div data-aos='zoom-in-up'>
-                    <h2 className='text-4xl md:text-5xl'>Technologies I work with</h2>
-                    <p className='text-white pt-2'>I have worked with a range a technologies in the web development world. From Back-end To Design
-                    </p>
-                </div>
-                <div data-aos='zoom-in-up'>
-                    <div className='grid grid-cols-2 text-accent text-3xl sm:text-4xl'>
-                        <div className='space-y-2'>
-                            <h2 data-aos='zoom-in-up'>Next.js</h2>
-                            <h2 data-aos='zoom-in-up'>Remix.js</h2>
-                            <h2 data-aos='zoom-in-up'>React.js</h2>
-                        </div>
-                        <div className='space-y-2'>
-                            <h2 data-aos='zoom-in-up'>Tailwind</h2>
-                            <h2 data-aos='zoom-in-up'>CSS</h2>
-                            <h2 data-aos='zoom-in-up'>Node.js</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 };
