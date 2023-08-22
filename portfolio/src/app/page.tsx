@@ -11,10 +11,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { useEffect } from 'react';
-import { GooeyBackground } from '@/components/GooeyBackground';
+import dynamic from 'next/dynamic';
+
+// Import the GooeyBackground component lazily
+const DynamicGooeyBackground = dynamic(
+  () => import('@/components/GooeyBackground').then((module) => module.GooeyBackground),
+  { ssr: false }
+);
 
 export default function Home() {
-
   useEffect(() => {
     AOS.init({
       easing: 'ease-in-back',
@@ -30,13 +35,13 @@ export default function Home() {
 
   return (
     <main>
-      {typeof window !== 'undefined' && <GooeyBackground />}
-      <Header/>
-      <AboutMe/>
-      <Projects/>
-      {/* <Work/> */}
-      <Skills/>
-      <Contact/>
+      <DynamicGooeyBackground />
+      <Header />
+      <AboutMe />
+      <Projects />
+      {/* <Work /> */}
+      <Skills />
+      <Contact />
     </main>
-  )
-};
+  );
+}

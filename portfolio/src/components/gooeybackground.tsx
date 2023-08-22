@@ -26,10 +26,6 @@ export const GooeyBackground: React.FC = () => {
       };
   }, [svgAnimationsInitialized]);
 
-    if (typeof window === 'undefined') {
-        return null; // Return null on the server side
-    }
-
     const gradientColors = ['rgba(255, 196, 0, 0.9)', 'rgba(255, 153, 204, 0.9)'];
     const gradientDirection = 'to bottom right';
 
