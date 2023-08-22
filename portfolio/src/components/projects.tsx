@@ -1,70 +1,32 @@
 import React from 'react';
-// import crypticchat1 from '%PUBLIC_URL%/crypticchat1.png';
-// import crypticchat2 from '%PUBLIC_URL%/crypticchat2.png';
 import { Heading } from './Heading';
 import { Card } from './Card';
-
-// const crypticchat = [
-//     {
-//       image: crypticchat1,
-//       title: 'Cryptic Chat: Log In',
-//       link: 'https://cryptichat.benmitchell.dev/',
-//     },
-//     {
-//       image: crypticchat2,
-//       title: 'Cryptic Chat: Log In',
-//       link: 'https://cryptichat.benmitchell.dev/',
-//     },
-//   ];
+import { FaGithub } from 'react-icons/fa';
 
 const data = [ 
     {
-    id: 0,
-    title: 'Cryptic Chat: Log In',
-    desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
-    img: '/crypticchat1.webp',
-    tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+        id: 0,
+        title: 'Cryptic Chat',
+        desc: 'Group project where we made end-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
+        img: '/crypticchat1.webp',
+        tags: ['Vite', 'Tailwind', 'GraphQL',  'Docker'],
     },
 
     {
         id: 1,
-        title: 'Cryptic Chat: Log In',
-        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
-        img: '/crypticchat1.webp',
-        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+        title: 'Robot Biscuit Picker ',
+        desc: 'A simulation of a robot using a vacuum gripper to pick biscuits from a conveyor belt and place them in a box.',
+        img: '/biscuit_picker.webp',
+        tags: ['ROS', 'Gazebo', 'C++',  'Python'],
     },
 
     {
         id: 2,
-        title: 'Cryptic Chat: Log In',
-        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
-        img: '/crypticchat1.webp',
-        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
+        title: 'Nba Team Roster',
+        desc: 'Webiste that allows you to search for NBA teams and view their roster and stats. Made with API.',
+        img: '/nba_team_finder.webp',
+        tags: ['Python', 'API', 'HTML', 'SQL'],
     },
-
-    {
-        id: 3,
-        title: 'Cryptic Chat: Log In',
-        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
-        img: '/crypticchat1.webp',
-        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
-    },
-
-    {
-        id: 4,
-        title: 'Cryptic Chat: Log In',
-        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
-        img: '/crypticchat1.webp',
-        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
-    },
-
-    {
-        id: 5,
-        title: 'Cryptic Chat: Log In',
-        desc: 'End-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
-        img: '/crypticchat1.webp',
-        tags: ['React', 'Tailwind', 'Vite', 'GraphQL', 'Apollo', 'Docker'],
-        },
 
 ];
 
@@ -84,6 +46,12 @@ export const Projects = () => {
                     />
                 ))}
             </div>
+            <p className="mt-4 font-sagona text-center">
+                You can all my projects on my Github page:
+                    <a href="https://github.com/tobiy105" target="_blank" rel="noopener noreferrer" className="ml-1 text-white">
+                    <FaGithub className="inline text-lg" /> 
+                </a>
+            </p>
         </div>
     </div>
   )
