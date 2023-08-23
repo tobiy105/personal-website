@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Heading } from './heading';
+import { Heading } from './Heading';
 
 interface SkillProgressBarProps {
   skillName: string;

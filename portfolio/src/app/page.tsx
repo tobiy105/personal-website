@@ -1,11 +1,10 @@
 'use client'
 
-import { Contact } from '@/components/contact';
-import { Header } from '@/components/header';
-import { Projects } from '@/components/projects';
-import { AboutMe } from '@/components/aboutme';
-import { Work } from '@/components/work';
-import { Skills } from '@/components/skills';
+import { Contact } from '@/components/Contact';
+import { Header } from '@/components/Header';
+import { Projects } from '@/components/Projects';
+import { AboutMe } from '@/components/AboutMe';
+import { Skills } from '@/components/Skills';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -15,7 +14,7 @@ import dynamic from 'next/dynamic';
 
 // Import the GooeyBackground component lazily
 const DynamicGooeyBackground = dynamic(
-  () => import('@/components/gooeybackground').then((module) => module.GooeyBackground),
+  () => import('@/components/GooeyBackground').then((module) => module.GooeyBackground),
   { ssr: false }
 );
 
