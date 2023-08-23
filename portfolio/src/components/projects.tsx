@@ -1,6 +1,6 @@
 import React from 'react';
-import { Heading } from './Heading';
-import { Card } from './Card';
+import { Heading } from './heading';
+import { Card } from './card';
 import { FaGithub } from 'react-icons/fa';
 
 const data = [ 

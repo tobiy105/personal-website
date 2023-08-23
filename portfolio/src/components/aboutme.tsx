@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading } from './Heading';
+import { Heading } from './heading';
 import profile from '../../public/profile.jpg';
 import Image from 'next/image';
 
