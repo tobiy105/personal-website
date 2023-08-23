@@ -1,20 +1,19 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import {AiOutlineMenu} from 'react-icons/ai';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 export const Navbar = () => {
-
   const [activeTab, setActiveTab] = useState('home');
   const [navbarTransparent, setNavbarTransparent] = useState(true);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const homeSection = document.getElementById('home');
       const aboutmeSection = document.getElementById('about');
       const projectsSection = document.getElementById('projects');
-      const skillsSection = document.getElementById('skills');
+      const skillsSection = document.getElementById('skills'); // Ensure 'skillsSection' is defined
       const contactSection = document.getElementById('contact');
 
       const scrollPosition = window.scrollY;
@@ -40,6 +39,7 @@ export const Navbar = () => {
       } else if (
         projectsSection &&
         contactSection &&
+        skillsSection && // Check if skillsSection exists
         scrollPosition >= projectsSection.offsetTop &&
         scrollPosition < skillsSection.offsetTop
       ) {
@@ -73,27 +73,27 @@ export const Navbar = () => {
     <div className={`pt-8 px-4 py-4 fixed flex justify-between top-0 z-10 w-full ${navbarTransparent ? 'bg-transparent' : 'bg-gray-700 bg-opacity-20'}`}>
       <div className='text-2xl md:text-4xl font-medium'>Oluwatobi Sobola</div>
       <ul className={`gap-10 lg:gap-16 hidden md:flex ${showMobileMenu ? 'hidden' : ''}`}>
-        <li >
-          <a href="#home" className={` text-2xl text-white ${activeTab === 'home' ? 'font-bold' : ''}`}>
+        <li>
+          <a href="#home" className={`text-2xl text-white ${activeTab === 'home' ? 'font-bold' : ''}`}>
             Home
           </a>
         </li>
-        <li >
+        <li>
           <a href="#about" className={`text-2xl text-white ${activeTab === 'about' ? 'font-bold' : ''}`}>
             About Me
           </a>
         </li>
-        <li >
+        <li>
           <a href="#projects" className={`text-2xl text-white ${activeTab === 'projects' ? 'font-bold' : ''}`}>
             Projects
           </a>
         </li>
-        <li >
+        <li>
           <a href="#skills" className={`text-2xl text-white ${activeTab === 'skills' ? 'font-bold' : ''}`}>
             Skills 
           </a>
         </li>
-        <li >
+        <li>
           <a href="#contact" className={`text-2xl text-white ${activeTab === 'contact' ? 'font-bold' : ''}`}>
             Contact
           </a>
@@ -112,7 +112,7 @@ export const Navbar = () => {
             Projects
           </a>
           <a href="#skills" className={`block text-white text-xl ${activeTab === 'skills' ? 'font-bold' : ''}`}>
-            skills Experience
+            Skills Experience
           </a>
           <a href="#contact" className={`block text-white text-xl ${activeTab === 'contact' ? 'font-bold' : ''}`}>
             Contact
