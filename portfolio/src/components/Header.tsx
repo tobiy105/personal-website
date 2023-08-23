@@ -36,7 +36,7 @@ export const Header = () => {
     }, 250);
 
     return () => clearInterval(interval);
-  }, [typingText, displayedText, typingIndex]);
+  }, [typingText, displayedText, typingIndex, messages]);
 
   return (
     <div className='min-h-screen bg-cover'>
