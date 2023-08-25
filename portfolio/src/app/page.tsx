@@ -1,7 +1,7 @@
 'use client'
 
 import { Contact } from '@/components/Contact';
-import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
 import { Projects } from '@/components/Projects';
 import { AboutMe } from '@/components/AboutMe';
 import { Skills } from '@/components/Skills';
@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <main>
       <DynamicGooeyBackground />
-      <Header />
+      <Hero />
       <AboutMe />
       <Projects />
       {/* <Work /> */}
