@@ -112,7 +112,7 @@ export const Navbar = () => {
             Projects
           </a>
           <a href="#skills" className={`block text-white text-xl ${activeTab === 'skills' ? 'font-bold' : ''}`}>
-            Skills Experience
+            Skills
           </a>
           <a href="#contact" className={`block text-white text-xl ${activeTab === 'contact' ? 'font-bold' : ''}`}>
             Contact
