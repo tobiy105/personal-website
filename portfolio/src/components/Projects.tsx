@@ -48,7 +48,7 @@ export const Projects = () => {
             </div>
             <p className="mt-4 font-sagona text-center">
                 You can view all of my projects on my Github page:
-                    <a href="https://github.com/tobiy105" target="_blank" rel="noopener noreferrer" className="ml-1 text-white">
+                    <a href="https://github.com/tobiy105" target="_blank" rel="noopener noreferrer" className="ml-1 text-white hover:text-gray-900">
                     <FaGithub className="inline text-lg" /> 
                 </a>
             </p>

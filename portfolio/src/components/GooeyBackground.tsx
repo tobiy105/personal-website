@@ -85,7 +85,7 @@ export const GooeyBackground: React.FC = () => {
                 zIndex: -1,
             }}
         >
-            <Goo intensity="strong">
+            <Goo intensity='strong'>
                 <svg width={svgWidth} height={svgHeight}>
                     <g>
                         {circles}

@@ -74,27 +74,27 @@ export const Navbar = () => {
       <div className='text-2xl md:text-4xl font-medium'>Oluwatobi Sobola</div>
       <ul className={`gap-10 lg:gap-16 hidden md:flex ${showMobileMenu ? 'hidden' : ''}`}>
         <li>
-          <a href="#home" className={`text-2xl text-white ${activeTab === 'home' ? 'font-bold' : ''}`}>
+          <a href='#home' className={`text-2xl text-white ${activeTab === 'home' ? 'font-bold' : ''}`}>
             Home
           </a>
         </li>
         <li>
-          <a href="#about" className={`text-2xl text-white ${activeTab === 'about' ? 'font-bold' : ''}`}>
+          <a href='#about' className={`text-2xl text-white ${activeTab === 'about' ? 'font-bold' : ''}`}>
             About Me
           </a>
         </li>
         <li>
-          <a href="#projects" className={`text-2xl text-white ${activeTab === 'projects' ? 'font-bold' : ''}`}>
+          <a href='#projects' className={`text-2xl text-white ${activeTab === 'projects' ? 'font-bold' : ''}`}>
             Projects
           </a>
         </li>
         <li>
-          <a href="#skills" className={`text-2xl text-white ${activeTab === 'skills' ? 'font-bold' : ''}`}>
+          <a href='#skills' className={`text-2xl text-white ${activeTab === 'skills' ? 'font-bold' : ''}`}>
             Skills 
           </a>
         </li>
         <li>
-          <a href="#contact" className={`text-2xl text-white ${activeTab === 'contact' ? 'font-bold' : ''}`}>
+          <a href='#contact' className={`text-2xl text-white ${activeTab === 'contact' ? 'font-bold' : ''}`}>
             Contact
           </a>
         </li>
@@ -102,19 +102,19 @@ export const Navbar = () => {
       <AiOutlineMenu className='md:hidden' size={20} onClick={handleMobileMenuClick} />
       {showMobileMenu && (
         <div className='md:hidden mt-2'>
-          <a href="#home" className={`block text-white text-xl ${activeTab === 'home' ? 'font-bold' : ''}`}>
+          <a href='#home' className={`block text-white text-xl ${activeTab === 'home' ? 'font-bold' : ''}`}>
             Home
           </a>
-          <a href="#about" className={`block text-white text-xl ${activeTab === 'about' ? 'font-bold' : ''}`}>
+          <a href='#about' className={`block text-white text-xl ${activeTab === 'about' ? 'font-bold' : ''}`}>
             About Me
           </a>
-          <a href="#projects" className={`block text-white text-xl ${activeTab === 'projects' ? 'font-bold' : ''}`}>
+          <a href='#projects' className={`block text-white text-xl ${activeTab === 'projects' ? 'font-bold' : ''}`}>
             Projects
           </a>
-          <a href="#skills" className={`block text-white text-xl ${activeTab === 'skills' ? 'font-bold' : ''}`}>
+          <a href='#skills' className={`block text-white text-xl ${activeTab === 'skills' ? 'font-bold' : ''}`}>
             Skills
           </a>
-          <a href="#contact" className={`block text-white text-xl ${activeTab === 'contact' ? 'font-bold' : ''}`}>
+          <a href='#contact' className={`block text-white text-xl ${activeTab === 'contact' ? 'font-bold' : ''}`}>
             Contact
           </a>
         </div>

@@ -47,33 +47,33 @@ export const Hero = () => {
       <Navbar />
       <div className='container grid lg:grid-cols-1 h-[calc(100vh-60px)]' id='home'>
         <div className='flex flex-col justify-center items-center h-full'>
-        <h1 className="text-white text-3xl md:text-5xl font-sagona mb-4">
+        <h1 className='text-white text-3xl md:text-5xl font-sagona mb-4'>
             Hello! 
-            <span className="text-3xl md:text-5xl waving-hand">
+            <span className='text-3xl md:text-5xl waving-hand'>
               👋
             </span> 
             My name is
             <br />
-            <span className="text-3xl md:text-5xl font-bold font-sagona ">Oluwatobi Sobola</span>
+            <span className='text-3xl md:text-5xl font-bold font-sagona '>Oluwatobi Sobola</span>
           </h1>
 
           {!isSmallScreen && (
-            <div className="writer h-[5rem]">
-              <div className="text-white text-3xl md:text-5xl font-sagona writer-text">
+            <div className='writer h-[5rem]'>
+              <div className='text-white text-3xl md:text-5xl font-sagona writer-text'>
                 {displayedText}
               </div>
             </div>
           )}
 
-          <div className="flex space-x-4 mt-2 h-[5rem]">
-            <a href="mailto:tobiy105@outlook.com" className="text-gray-100 hover:text-gray-900">
-              <FaEnvelope className="text-3xl md:text-4xl" />
+          <div className='flex space-x-4 mt-2 h-[5rem]'>
+            <a href='mailto:tobiy105@outlook.com' className='text-gray-100 hover:text-gray-900'>
+              <FaEnvelope className='text-3xl md:text-4xl' />
             </a>
-            <a href="https://www.linkedin.com/in/oluwatobi-sobola" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
-              <FaLinkedin className="text-gray-100 text-3xl md:text-4xl hover:text-gray-900" />
+            <a href='https://www.linkedin.com/in/oluwatobi-sobola' target='_blank' rel='noopener noreferrer' className='text-gray-700 hover:text-gray-900'>
+              <FaLinkedin className='text-gray-100 text-3xl md:text-4xl hover:text-gray-900' />
             </a>
-            <a href="https://github.com/tobiy105" target="_blank" rel="noopener noreferrer" className="text-gray-100 hover:text-gray-900">
-              <FaGithub className="text-3xl md:text-4xl" />
+            <a href='https://github.com/tobiy105' target='_blank' rel='noopener noreferrer' className='text-gray-100 hover:text-gray-900'>
+              <FaGithub className='text-3xl md:text-4xl' />
             </a>
           </div>
         </div>

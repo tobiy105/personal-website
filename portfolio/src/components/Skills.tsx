@@ -77,7 +77,7 @@ export const Skills = () => {
                   <SkillProgressBar skillName="Data Structures" percentage={85} />
                   </div>
                   <div className="flex justify-center">
-                  <SkillProgressBar skillName="React" percentage={70} />
+                  <SkillProgressBar skillName="Typescript" percentage={70} />
                   </div>
                 </>
               )}
@@ -91,7 +91,7 @@ export const Skills = () => {
                   <SkillProgressBar skillName="Collaboration" percentage={85} />
                   </div>
                   <div className="flex justify-center">
-                  <SkillProgressBar skillName="Positivity" percentage={70} />
+                  <SkillProgressBar skillName="Positivity" percentage={80} />
                   </div>
                   <div className="flex justify-center">
                   <SkillProgressBar skillName="Adaptability" percentage={80} />

@@ -16,21 +16,21 @@ export const Contact = () => {
             </p>
 
             <div className='flex gap-3 items-center'>
-              <FiMail size={30} /> <a href="mailto:tobiy105@outlook.com">tobiy105@outlook.com</a>
+              <FiMail size={30} /> <a href='mailto:tobiy105@outlook.com'>tobiy105@outlook.com</a>
             </div>
 
             <div className='flex gap-3 items-center'>
               <BsTelephone size={30} /> (+44) 07484286269
             </div>
 
-            <div className="flex space-x-4">
+            <div className='flex space-x-4'>
               {/* Email Icon and Link */}
-              <a href="https://linkedin.com/in/oluwatobi-sobola" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-white text-2xl hover:text-gray-800" />
+              <a href='https://linkedin.com/in/oluwatobi-sobola' target='_blank' rel='noopener noreferrer'>
+                <FaLinkedin className='text-white text-2xl hover:text-gray-800' />
               </a>
               {/* GitHub Icon and Link */}
-              <a href="https://github.com/tobiy105" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="text-white text-2xl hover:text-gray-800" />
+              <a href='https://github.com/tobiy105' target='_blank' rel='noopener noreferrer'>
+                <FaGithub className='text-white text-2xl hover:text-gray-800' />
               </a>
             </div>
 

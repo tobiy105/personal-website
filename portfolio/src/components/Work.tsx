@@ -6,7 +6,7 @@ const testimaonialData = [
     {
         companyName: 'Dunbia',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        img: "/profile.jpg",
+        img: '/profile.jpg',
         name: 'Oluwatobi',
         designation: 'Shift Manager',
     },
@@ -14,7 +14,7 @@ const testimaonialData = [
     {
         companyName: 'Google',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        img: "/profile.jpg",
+        img: '/profile.jpg',
         name: 'Oluwatobi',
         designation: 'Software Engineer',
     },
@@ -22,7 +22,7 @@ const testimaonialData = [
     {
         companyName: 'Google',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
-        img: "/profile.jpg",
+        img: '/profile.jpg',
         name: 'Oluwatobi',
         designation: 'Software Engineer',
     },
