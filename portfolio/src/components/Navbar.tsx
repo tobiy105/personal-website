@@ -70,7 +70,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className={`pt-8 px-4 py-4 fixed flex justify-between top-0 z-10 w-full ${navbarTransparent ? 'bg-transparent' : 'bg-gray-700 bg-opacity-20'}`}>
+    <div className={`flex items-center justify-between pt-4 md:pt-8 px-4 py-2 md:py-4 fixed top-0 z-10 w-full ${navbarTransparent ? 'bg-transparent' : 'bg-gray-700 bg-opacity-20'}`}>
       <div className='text-2xl md:text-4xl font-medium'>Oluwatobi Sobola</div>
       <ul className={`gap-10 lg:gap-16 hidden md:flex ${showMobileMenu ? 'hidden' : ''}`}>
         <li>
