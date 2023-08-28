@@ -22,7 +22,7 @@ export const Contact = () => {
             </div>
 
             <div className='flex gap-3 items-center'>
-            <a href='tel:+4407484286269' className='text-white hover:text-gray-900'> {/* Added tel: protocol */}
+            <a href='tel:+447484286269' className='text-white hover:text-gray-900'> {/* Added tel: protocol */}
                 <BsTelephone className='text-2xl' />
               </a>{' '}
               (+44) 07484286269
