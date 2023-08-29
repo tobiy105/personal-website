@@ -23,7 +23,7 @@ export default function ContactFormEmail({
                         <Heading className='leading-tight'>You have received the following message from the contact form</Heading>
                         <Text>{message}</Text>
                         <Hr />
-                        <Text>The sender's email is: {senderEmail}</Text>
+                        <Text>{`The sender's email is: ${senderEmail}`}</Text>
                     </Section>
                 </Container>
             </Body>
