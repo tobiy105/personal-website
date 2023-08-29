@@ -2,6 +2,7 @@ import React from 'react';
 import { FiMail } from 'react-icons/fi';
 import { BsTelephone } from 'react-icons/bs';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'; 
+import { SendEmail } from '../api/SendEmail';
 
 export const Contact = () => {
   return (
@@ -42,34 +43,49 @@ export const Contact = () => {
           </div>
 
           <div className='space-y-8'>
-            <div className='flex flex-col gap-1'>
-              <label htmlFor='name'>Name</label>
-              <input 
-                className='h-[40px] bg-transparent border border-accent rounded-md' 
-                type='text' 
-                id='name' 
-              />
-            </div>
+            <form className='space-y-8' action={async (formData) => {
+                await SendEmail(formData);
+              }}>
+              <div className='flex flex-col gap-1'>
+                <label htmlFor='name'>Name</label>
+                <input 
+                  className='h-[40px] bg-transparent border border-accent rounded-md' 
+                  type='text' 
+                  id='name' 
+                  name='name'
+                  required
+                  maxLength={50}
+                />
+              </div>
 
-            <div className='flex flex-col gap-1'>
-              <label htmlFor='email'>Email</label>
-              <input 
-                className='h-[40px] bg-transparent border border-accent rounded-md' 
-                type='text' 
-                id='email' 
-              />
-            </div>
+              <div className='flex flex-col gap-1'>
+                <label htmlFor='email'>Email</label>
+                <input 
+                  className='h-[40px] bg-transparent border border-accent rounded-md' 
+                  type='text' 
+                  id='email' 
+                  name='email'
+                  maxLength={50}
+                  required
+                />
+              </div>
 
-            <div className='flex flex-col gap-1'>
-              <label htmlFor='msg'>Message</label>
-              <textarea
-                className='bg-transparent border border-accent rounded-md' 
-                id='msg' 
-                rows={8}
-              ></textarea>
-            </div>
+              <div className='flex flex-col gap-1'>
+                <label htmlFor='msg'>Message</label>
+                <textarea
+                  className='bg-transparent border border-accent rounded-md' 
+                  id='msg' 
+                  name='msg'
+                  rows={8}
+                  required
+                  maxLength={500}
+                ></textarea>
+              </div>
 
-            <button className='bg-gray-700 bg-opacity-40 border border-accent text-white p-2 px-6 rounded-md hover:bg-gray-700'>Send</button>
+              <button className='bg-gray-700 bg-opacity-40 border border-accent text-white p-2 px-6 rounded-md hover:bg-gray-700' type='submit'>
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>
