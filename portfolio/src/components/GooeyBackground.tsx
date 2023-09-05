@@ -13,12 +13,10 @@ export const GooeyBackground: React.FC = () => {
   const [svgAnimationsInitialized, setSvgAnimationsInitialized] = useState(false);
 
   useEffect(() => {
-      // Initialize your SVG animations or other side effects here
+      
       if (!svgAnimationsInitialized) {
-          // Your SVG animations setup code goes here
-          // For example, you might set up timers, start animations, etc.
           
-          setSvgAnimationsInitialized(true); // Set the state to indicate that animations are initialized
+          setSvgAnimationsInitialized(true); 
       }
 
       return () => {
@@ -57,7 +55,7 @@ export const GooeyBackground: React.FC = () => {
       const cy = `${getRandomValue(10, 90)}%`;
       const r = getRandomValue(20, 60);
       const color = getRandomColor();
-      const animationDuration = `${getRandomValue(8, 15)}s`;
+      const animationDuration = `${getRandomValue(12, 18)}s`;
 
       circles.push(
           <circle
