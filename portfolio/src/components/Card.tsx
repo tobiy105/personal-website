@@ -10,7 +10,7 @@ interface CardProps {
 
 export const Card:React.FC<CardProps> = ({ title, desc, img, tags }) => {
   return (
-    <div className='border border-accent h-auto w-[265px] sm:w-[350px] rounded-md ' data-aos='zoom-in-up'>
+    <div className='border border-accent h-auto w-[265px] sm:w-[350px] rounded-md hover:shadow-2xl' data-aos='zoom-in-up'>
         <div>
             <Image className='w-[265px] sm:w-[350px] h-[180px] sm:h-[200px] rounded-t-md '
                 src={img}
