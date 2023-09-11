@@ -13,48 +13,32 @@ export const Navbar = () => {
       const homeSection = document.getElementById('home');
       const aboutmeSection = document.getElementById('about');
       const projectsSection = document.getElementById('projects');
-      const skillsSection = document.getElementById('skills'); // Ensure 'skillsSection' is defined
+      const skillsSection = document.getElementById('skills'); 
       const contactSection = document.getElementById('contact');
 
       const scrollPosition = window.scrollY;
       const shouldNavbarBeTransparent = scrollPosition <= 200;
       setNavbarTransparent(shouldNavbarBeTransparent);
 
-      if (
-        homeSection &&
-        aboutmeSection &&
-        projectsSection &&
-        contactSection &&
-        scrollPosition >= homeSection.offsetTop &&
-        scrollPosition < aboutmeSection.offsetTop
-      ) {
+      const isInSection = (section: HTMLElement | null, scrollPos: number) => {
+        if (section) {
+          return (
+            scrollPos >= section.offsetTop &&
+            scrollPos < section.offsetTop + section.offsetHeight
+          );
+        }
+        return false;
+      }
+    
+      if (isInSection(homeSection, scrollPosition)) {
         setActiveTab('home');
-      } else if (
-        aboutmeSection &&
-        projectsSection &&
-        scrollPosition >= aboutmeSection.offsetTop &&
-        scrollPosition < projectsSection.offsetTop
-      ) {
+      } else if (isInSection(aboutmeSection, scrollPosition)) {
         setActiveTab('about');
-      } else if (
-        projectsSection &&
-        contactSection &&
-        skillsSection && // Check if skillsSection exists
-        scrollPosition >= projectsSection.offsetTop &&
-        scrollPosition < skillsSection.offsetTop
-      ) {
+      } else if (isInSection(projectsSection, scrollPosition)) {
         setActiveTab('projects');
-      } else if (
-        skillsSection &&
-        contactSection &&
-        scrollPosition >= skillsSection.offsetTop &&
-        scrollPosition < contactSection.offsetTop
-      ) {
+      } else if (isInSection(skillsSection, scrollPosition)) {
         setActiveTab('skills');
-      } else if (
-        contactSection &&
-        scrollPosition >= contactSection.offsetTop
-      ) {
+      } else if (isInSection(contactSection, scrollPosition)) {
         setActiveTab('contact');
       }
     };
@@ -70,9 +54,9 @@ export const Navbar = () => {
   };
 
   return (
-    <div className={`flex items-center justify-between pt-4 md:pt-8 px-4 py-2 md:py-4 fixed top-0 z-10 w-full ${navbarTransparent ? 'bg-transparent' : 'bg-gray-700 bg-opacity-20'}`}>
+    <div className={`flex items-center justify-between pt-2 md:pt-4 px-4 py-2 md:py-4 fixed top-0 z-10 w-full ${navbarTransparent ? 'bg-transparent' : 'bg-gray-700 bg-opacity-20'}`}>
       <div className='text-2xl md:text-4xl font-medium'>Oluwatobi Sobola</div>
-      <ul className={`gap-10 lg:gap-16 hidden md:flex ${showMobileMenu ? 'hidden' : ''}`}>
+      <ul className={`pt-4 gap-10 lg:gap-16 hidden md:flex ${showMobileMenu ? 'hidden' : ''}`}>
         <li>
           <a href='#home' className={`text-2xl text-white ${activeTab === 'home' ? 'font-bold' : ''}`}>
             Home
