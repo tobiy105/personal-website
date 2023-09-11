@@ -12,7 +12,7 @@ export const AboutMe = () => {
           <div className='md:w-1/2 text-center mb-4 md:mb-0' data-aos='zoom-in-up'>
             <Image
               src={profile}
-              className='w-32 h-32 md:w-48 md:h-48 lg:w-96 lg:h-96 rounded-full mx-auto' 
+              className='w-32 h-32 md:w-48 md:h-48 lg:w-96 lg:h-96 rounded-full mx-auto border border-accent' 
               alt='Profile'
             />
           </div>
