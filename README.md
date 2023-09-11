@@ -42,7 +42,7 @@ You need
 
 ## Deployment
 
-I used Vercel to deploy my app since it's very to easy with Nextjs
+I used Vercel to deploy my app since it's very easy to deploy with Nextjs
 
 ## Built With
 
