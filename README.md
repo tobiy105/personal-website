@@ -8,4 +8,4 @@ This is my personal website if you want to have a look: https://tobi-personal-we
 
 ![image](https://github.com/tobiy105/personal-website/assets/75105019/2943af73-6a9d-4b84-a774-54986bc120ee)
 
-
+I have used gooey-react for my background if you wanted to try it out for yourself.
