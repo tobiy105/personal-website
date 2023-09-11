@@ -2,7 +2,7 @@
 
 This is personal website where I showcase my portfolio.
 
-This is my personal website if you want to have a look: https://tobi-personal-website.vercel.app/
+Link to my site: https://tobi-personal-website.vercel.app/
 
 ![image](https://github.com/tobiy105/personal-website/assets/75105019/2943af73-6a9d-4b84-a774-54986bc120ee)
 
@@ -38,7 +38,7 @@ Say what the step will be
 npm run dev
 ```
 
-You need 
+To sent the message being sent to you via email. You neet to set up an account with [Resend](https://resend.com/) and get an api key.
 
 ## Deployment
 
@@ -46,7 +46,7 @@ I used Vercel to deploy my app since it's very easy to deploy with Nextjs
 
 ## Built With
 
-* [Nextjs]([http://www.dropwizard.io/1.0.2/docs/](https://nextjs.org/docs)) - The web framework used
+* [Nextjs](https://nextjs.org/docs) - The web framework used
 
 
 ## Acknowledgments
