@@ -56,6 +56,28 @@ export const Navbar = () => {
   return (
     <div className={`flex items-center justify-between pt-2 md:pt-4 px-4 py-2 md:py-4 fixed top-0 z-10 w-full ${navbarTransparent ? 'bg-transparent' : 'bg-gray-700 bg-opacity-20'}`}>
       <div className='text-2xl md:text-4xl font-medium'>Oluwatobi Sobola</div>
+      <div className="relative md:hidden">
+        <AiOutlineMenu className='md:hidden' size={20} onClick={handleMobileMenuClick} />
+        {showMobileMenu && (
+          <div className={'mt-2 absolute top-full right-12 w-full '}>
+            <a href='#home' className={`block text-white text-xl ${activeTab === 'home' ? 'font-bold' : ''}`}>
+              Home
+            </a>
+            <a href='#about' className={`block text-white text-xl ${activeTab === 'about' ? 'font-bold' : ''}`}>
+              About Me
+            </a>
+            <a href='#projects' className={`block text-white text-xl ${activeTab === 'projects' ? 'font-bold' : ''}`}>
+              Projects
+            </a>
+            <a href='#skills' className={`block text-white text-xl ${activeTab === 'skills' ? 'font-bold' : ''}`}>
+              Skills
+            </a>
+            <a href='#contact' className={`block text-white text-xl ${activeTab === 'contact' ? 'font-bold' : ''}`}>
+              Contact
+            </a>
+          </div>
+        )}
+      </div>
       <ul className={`pt-4 gap-10 lg:gap-16 hidden md:flex ${showMobileMenu ? 'hidden' : ''}`}>
         <li>
           <a href='#home' className={`text-2xl text-white ${activeTab === 'home' ? 'font-bold' : ''}`}>
@@ -83,26 +105,6 @@ export const Navbar = () => {
           </a>
         </li>
       </ul>
-      <AiOutlineMenu className='md:hidden' size={20} onClick={handleMobileMenuClick} />
-      {showMobileMenu && (
-        <div className='md:hidden mt-2'>
-          <a href='#home' className={`block text-white text-xl ${activeTab === 'home' ? 'font-bold' : ''}`}>
-            Home
-          </a>
-          <a href='#about' className={`block text-white text-xl ${activeTab === 'about' ? 'font-bold' : ''}`}>
-            About Me
-          </a>
-          <a href='#projects' className={`block text-white text-xl ${activeTab === 'projects' ? 'font-bold' : ''}`}>
-            Projects
-          </a>
-          <a href='#skills' className={`block text-white text-xl ${activeTab === 'skills' ? 'font-bold' : ''}`}>
-            Skills
-          </a>
-          <a href='#contact' className={`block text-white text-xl ${activeTab === 'contact' ? 'font-bold' : ''}`}>
-            Contact
-          </a>
-        </div>
-      )}
     </div>
   );
 };
