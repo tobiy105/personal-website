@@ -8,7 +8,14 @@ const data = [
         id: 0,
         title: 'Cryptic Chat',
         desc: 'Group project where we made end-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
-        img: '/crypticchat1.webp',
+        imgs: ['/crypticchat1.webp',
+                '/crypticchat2.webp',
+                ],
+        imgs_exp: ['/crypticchat1.webp',
+                '/crypticchat2.webp',
+                '/crypticchatmobview.webp',
+                '/crypticchatmobview2.webp',
+                ],
         tags: ['Vite', 'Tailwind', 'GraphQL',  'Docker'],
     },
 
@@ -16,7 +23,8 @@ const data = [
         id: 1,
         title: 'Robot Biscuit Picker ',
         desc: 'A simulation of a robot using a vacuum gripper to pick biscuits from a conveyor belt and place them in a box.',
-        img: '/biscuit_picker.webp',
+        imgs: ['/biscuit_picker.webp',
+                ],
         tags: ['ROS', 'Gazebo', 'C++',  'Python'],
     },
 
@@ -24,7 +32,8 @@ const data = [
         id: 2,
         title: 'Nba Team Roster',
         desc: 'Webiste that allows you to search for NBA teams and view their roster and stats. Made with API.',
-        img: '/nba_team_finder.webp',
+        imgs: ['/nba_team_finder.webp',
+                ],
         tags: ['Python', 'API', 'HTML', 'SQL'],
     },
 
@@ -41,7 +50,7 @@ export const Projects = () => {
                         key={el.id}
                         title={el.title}
                         desc={el.desc}
-                        img={el.img}
+                        imgs={el.imgs}
                         tags={el.tags}
                     />
                 ))}
