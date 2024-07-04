@@ -20,7 +20,7 @@ export const GooeyBackground: React.FC = () => {
       }
 
       return () => {
-          // Cleanup or teardown logic for your animations can go here
+          // Cleanup or teardown logic 
       };
   }, [svgAnimationsInitialized]);
 

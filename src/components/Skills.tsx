@@ -91,19 +91,19 @@ export const Skills = () => {
                   <SkillProgressBar skillName="Collaboration" percentage={85} />
                   </div>
                   <div className="flex justify-center">
-                  <SkillProgressBar skillName="Positivity" percentage={80} />
+                  <SkillProgressBar skillName="Positivity" percentage={85} />
                   </div>
                   <div className="flex justify-center">
                   <SkillProgressBar skillName="Adaptability" percentage={80} />
                   </div>
                   <div className="flex justify-center">
-                  <SkillProgressBar skillName="Problem Solving" percentage={75} />
+                  <SkillProgressBar skillName="Problem Solving" percentage={80} />
                   </div>
                   <div className="flex justify-center">
                   <SkillProgressBar skillName="Empathy" percentage={90} />
                   </div>
                   <div className="flex justify-center">
-                  <SkillProgressBar skillName="Organization" percentage={85} />
+                  <SkillProgressBar skillName="Organization" percentage={75} />
                   </div>
                   <div className="flex justify-center">
                   <SkillProgressBar skillName="Creativity" percentage={90} />
