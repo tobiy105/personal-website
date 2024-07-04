@@ -55,7 +55,7 @@ export const GooeyBackground: React.FC = () => {
       const cy = `${getRandomValue(10, 90)}%`;
       const r = getRandomValue(20, 60);
       const color = getRandomColor();
-      const animationDuration = `${getRandomValue(12, 18)}s`;
+      const animationDuration = `${getRandomValue(16, 24)}s`;
 
       circles.push(
           <circle
