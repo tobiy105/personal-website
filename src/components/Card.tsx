@@ -67,7 +67,7 @@ export const Card: React.FC<CardProps> = ({
         </div>
         <div className="text-center">
           <button
-            className="text-blue-500 hover:underline"
+            className="text-white hover:underline"
             onClick={onReadMoreClick} 
           >
             Read More
