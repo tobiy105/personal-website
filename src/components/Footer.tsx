@@ -4,7 +4,7 @@ import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 export const Footer = () => {
   return (
     <div className='mt-16 py-6 text-center bg-gray-700 bg-opacity-80'>
-        <p className='text-white'> © Oluwatobi Sobola | All rights reserved 2023 </p>
+        <p className='text-white'> © Oluwatobi Sobola | All rights reserved 2024 </p>
       <div className='mt-4 flex items-center justify-center space-x-4'>
         <a href='mailto:tobiy105@outlook.com' className='text-white hover:text-gray-900'>
           <FaEnvelope className='text-lg' /> 
