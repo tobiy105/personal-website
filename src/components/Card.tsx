@@ -48,7 +48,7 @@ export const Card: React.FC<CardProps> = ({
         >
           <Image
             src={imgs[currentImageIndex]}
-            className={`w-[265px] sm:w-[350px] h-[180px] sm:h-[200px] rounded-t-md`}
+            className={`w-[263.5px] sm:w-[348.5px] h-[180px] sm:h-[200px] rounded-t-md`}
             width={350}
             height={350}
             alt={title}

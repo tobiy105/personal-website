@@ -60,17 +60,17 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
                 key={currentImageIndex}
                 src={project.extra_imgs[currentImageIndex]}
                 alt={`Project ${project.title} Image ${currentImageIndex}`}
-                className="max-h-[360px] rounded mx-auto"
+                className="max-h-[156px] rounded mx-auto"
               />
               <button
                 onClick={prevImage}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-60 p-2 w-10 h-10 rounded-full"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-100 bg-opacity-60 p-2 w-10 h-10 rounded-full"
               >
                 &larr;
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-200 bg-opacity-60 p-2 w-10 h-10  rounded-full"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-100 bg-opacity-60 p-2 w-10 h-10  rounded-full"
               >
                 &rarr;
               </button>
