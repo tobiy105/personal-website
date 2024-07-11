@@ -48,7 +48,7 @@ export const Card: React.FC<CardProps> = ({
         >
           <Image
             src={imgs[currentImageIndex]}
-            className={`w-[263.5px] sm:w-[348.5px] h-[180px] sm:h-[200px] rounded-t-md`}
+            className={`w-[263px] sm:w-[348px] h-[180px] sm:h-[200px] rounded-t-md`}
             width={350}
             height={350}
             alt={title}
@@ -56,7 +56,7 @@ export const Card: React.FC<CardProps> = ({
         </div>
       </div>
       <div className="p-4 space-y-4">
-        <div className="text-3xl font-extralight">{title}</div>
+        <div className="text-3xl font-extralight text-center">{title}</div>
         <div>{desc}</div>
         <div>
           {tags.map((el) => (
@@ -65,12 +65,14 @@ export const Card: React.FC<CardProps> = ({
             </div>
           ))}
         </div>
-        <button
-          className="text-blue-500 hover:underline"
-          onClick={onReadMoreClick} 
-        >
-          Read More
-        </button>
+        <div className="text-center">
+          <button
+            className="text-blue-500 hover:underline"
+            onClick={onReadMoreClick} 
+          >
+            Read More
+          </button>
+        </div>
       </div>
     </div>
   );
