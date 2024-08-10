@@ -24,7 +24,7 @@ const data: ProjectData[] = [
       extra_desc: 'This application is built using AWS services like Cognito for secure user management, Lambda for serverless functions, and DynamoDB for data management. The frontend is developed with TypeScript and Angular. The app provides personalized car recommendations based on user preferences, with a focus on continuous improvement through user feedback.',
       imgs: ['/BCFY.webp', '/BCFY-intial-search.webp', '/BCFY-search-result.webp'],
       extra_imgs: ['/BCFY.webp', '/BCFY-intial-search.webp', '/BCFY-search-result.webp', '/BCFY-search-result-2.webp', '/BCFY-search-result-mobile.webp'],
-      tags: ['AWS', 'TypeScript', 'Angular', 'DynamoDB', 'S3', 'Cognito'],
+      tags: ['AWS', 'TypeScript', 'Angular', 'C#', 'DynamoDB', 'S3', 'Cognito'],
     },
     {
       id: 1,
@@ -33,7 +33,7 @@ const data: ProjectData[] = [
       extra_desc: 'This project involved integrating the Edamam API for recipe searches and nutrient data, implementing secure user login with encrypted passwords, and supporting CRUD operations for user interactions with recipes. The backend was developed with Java Servlets and JDBC, while the frontend utilized React. Comprehensive testing and project management ensured successful delivery.',
       imgs: ['/ReciPro-home.webp', '/ReciPro-liked-recipes.webp', '/ReciPro-show-ingred.webp'],
       extra_imgs: ['/ReciPro-home.webp', '/ReciPro-liked-recipes.webp', '/ReciPro-show-ingred.webp', '/ReciPro-login.webp'],
-      tags: ['Java', 'React', 'Edamam API', 'JDBC'],
+      tags: ['Java', 'React', 'Edamam API', 'MySql', 'JDBC'],
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const data: ProjectData[] = [
       extra_desc: 'Group project where we made end-to-end encrypted chat app with a React and Vite frontend and a GraphQL API.',
       imgs: ['/crypticchat1.webp', '/crypticchat2.webp'],
       extra_imgs: ['/crypticchat1.webp', '/crypticchat2.webp', '/crypticchatmobview.webp', '/crypticchatmobview2.webp'],
-      tags: ['Vite', 'Tailwind', 'GraphQL', 'Docker'],
+      tags: ['Javascript', 'React', 'Python','Vite', 'Tailwind', 'GraphQL', 'Docker'],
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ const data: ProjectData[] = [
       extra_imgs: ['/Cinema-home.webp', '/Cinema_Research.webp', '/Cinema-Researchb.webp', '/Cinema-screen.webp',
         '/Cinema-tickets.webp', '/Cinema-basket.webp', '/Cinema-order.webp', '/Cinema-payment.webp', '/Cinema-ticket-pdf.webp'
       ],
-      tags: ['Flask', 'SQLite', 'Stripe API', 'IMDb API'],
+      tags: ['Python', 'Flask', 'SQLite', 'Stripe API', 'IMDb API'],
     },
     {
       id: 4,
@@ -63,7 +63,7 @@ const data: ProjectData[] = [
       imgs: ['/robot_arm.webp', '/robot_arm2.webp', '/robot_arm3.webp'],
       extra_imgs: ['/robot_arm.webp', '/robot_arm2.webp', '/robot_arm3.webp', 
         '/robot_arm4.webp', '/robot_arm5.webp', '/robot_arm6.webp', '/robot_arm7.webp'], 
-      tags: ['ROS', 'Gazebo', 'C++', 'Python'],
+      tags: ['ROS', 'Gazebo', 'C++', 'Python', 'Computer Vison', 'Machine Learning', 'OpenCV'],
     },
     {
       id: 5,
