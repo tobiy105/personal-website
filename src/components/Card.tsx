@@ -61,11 +61,16 @@ export const Card: React.FC<CardProps> = ({
           {desc}
         </div>
         <div className="flex flex-wrap justify-center gap-2 mb-0"> {/* Removed bottom margin */}
-          {tags.slice(0, 4).map((el) => (  /* Limit to 4 tags */
+          {tags.slice(0, 3).map((el, index) => (  /* Show 3 tags on mobile */
             <div className="tags text-xs px-2 py-1 rounded-full" key={el}>
               {el}
             </div>
           ))}
+          {tags.length > 3 && (
+            <div className="hidden sm:inline-block tags text-xs px-2 py-1 rounded-full">
+              {tags[3]}
+            </div>
+          )}
         </div>
       </div>
       <div className="text-center p-2"> {/* Kept padding minimal */}

@@ -82,7 +82,7 @@ const ProjectDetailsModal: React.FC<ProjectDetailsModalProps> = ({
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="tags text-xs sm:text-sm bg-gray-200 text-gray-700 px-2 py-1 sm:px-3 sm:py-1 rounded-full"
+                  className="tags text-xs sm:text-sm text-gray-700 px-2 py-1 sm:px-3 sm:py-1 rounded-full"
                 >
                   {tag}
                 </span>
