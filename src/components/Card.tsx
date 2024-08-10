@@ -37,8 +37,8 @@ export const Card: React.FC<CardProps> = ({
   }, [imgs]);
 
   return (
-    <div className="border border-accent h-auto w-[265px] sm:w-[350px] rounded-md hover:shadow-2xl" data-aos="zoom-in-up">
-      <div className="relative">
+    <div className="border border-accent h-[400px] w-[265px] sm:w-[350px] rounded-md hover:shadow-2xl flex flex-col" data-aos="zoom-in-up">
+      <div className="relative flex-shrink-0">
         <div
           style={{
             opacity: imageOpacity,
@@ -55,24 +55,26 @@ export const Card: React.FC<CardProps> = ({
           />
         </div>
       </div>
-      <div className="p-4 space-y-4">
-        <div className="text-3xl font-extralight text-center">{title}</div>
-        <div>{desc}</div>
-        <div>
-          {tags.map((el) => (
-            <div className="tags" key={el}>
+      <div className="p-4 space-y-2 flex-grow overflow-hidden">
+        <div className="text-2xl font-extralight text-center truncate">{title}</div>
+        <div className="text-sm overflow-hidden text-ellipsis h-[64px] sm:h-[56px]">
+          {desc}
+        </div>
+        <div className="flex flex-wrap justify-center gap-2 mb-0"> {/* Removed bottom margin */}
+          {tags.slice(0, 4).map((el) => (  /* Limit to 4 tags */
+            <div className="tags text-xs px-2 py-1 rounded-full" key={el}>
               {el}
             </div>
           ))}
         </div>
-        <div className="text-center">
-          <button
-            className="text-white hover:underline"
-            onClick={onReadMoreClick} 
-          >
-            Read More
-          </button>
-        </div>
+      </div>
+      <div className="text-center p-2"> {/* Kept padding minimal */}
+        <button
+          className="text-white hover:underline"
+          onClick={onReadMoreClick} 
+        >
+          Read More
+        </button>
       </div>
     </div>
   );

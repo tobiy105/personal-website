@@ -49,9 +49,9 @@ const data: ProjectData[] = [
       title: 'Cinema Website',
       desc: 'A comprehensive web application for booking movie tickets online, complete with seat selection, payment processing, and QR code ticket generation.',
       extra_desc: 'This project allows users to search for movies, reserve seats, purchase tickets online via Stripe, and receive a ticket with a QR code by email. It also supports in-person cash payments and includes admin functions for movie database management and sales data viewing. Developed using Flask with integrations for Stripe, IMDb, and SQLite.',
-      imgs: ['/Cinema-home.webp', '/Cinema-tickets.webp', '/Cinema-order.webp', '/Cinema-payemnt.webp'],
+      imgs: ['/Cinema-home.webp', '/Cinema-tickets.webp', '/Cinema-order.webp', '/Cinema-payment.webp'],
       extra_imgs: ['/Cinema-home.webp', '/Cinema_Research.webp', '/Cinema-Researchb.webp', '/Cinema-screen.webp',
-        '/Cinema-tickets.webp', '/Cinema-basket.webp', '/Cinema-order.webp', '/Cinema-payemnt.webp', '/Cinema-ticket-pdf.webp'
+        '/Cinema-tickets.webp', '/Cinema-basket.webp', '/Cinema-order.webp', '/Cinema-payment.webp', '/Cinema-ticket-pdf.webp'
       ],
       tags: ['Flask', 'SQLite', 'Stripe API', 'IMDb API'],
     },
@@ -70,19 +70,19 @@ const data: ProjectData[] = [
       title: 'Web App DevOps Project',
       desc: 'A DevOps-focused project developing and deploying a web application for order management using modern cloud technologies.',
       extra_desc: 'This project involved full-stack development with Flask, HTML, CSS, and JavaScript, integrated with an Azure SQL Database and Azure Key Vault for secure management of credentials. The application was containerized with Docker and deployed on an Azure Kubernetes Service (AKS) cluster using Terraform for Infrastructure as Code (IaC). Monitoring, alerting, and secrets management were implemented to maintain application health.',
-      imgs: ['/Order.webp', '/New-Order.webp'],
+      imgs: ['/Order.webp'],
       extra_imgs: ['/Order.webp', '/New-Order.webp'],
       tags: ['Flask', 'Azure', 'Docker', 'Kubernetes', 'Terraform'],
     },
-    {
-      id: 6,
-      title: 'Nba Team Roster',
-      desc: 'Webiste that allows you to search for NBA teams and view their roster and stats. Made with API.',
-      extra_desc: 'Webiste that allows you to search for NBA teams and view their roster and stats. Made with API.',
-      imgs: ['/nba_team_finder.webp'],
-      extra_imgs: ['/nba_team_finder.webp'], // Add additional images if needed
-      tags: ['Python', 'API', 'HTML', 'SQL'],
-    },
+    // {
+    //   id: 6,
+    //   title: 'Nba Team Roster',
+    //   desc: 'Webiste that allows you to search for NBA teams and view their roster and stats. Made with API.',
+    //   extra_desc: 'Webiste that allows you to search for NBA teams and view their roster and stats. Made with API.',
+    //   imgs: ['/nba_team_finder.webp'],
+    //   extra_imgs: ['/nba_team_finder.webp'], // Add additional images if needed
+    //   tags: ['Python', 'API', 'HTML', 'SQL'],
+    // },
    
   ];
   
